@@ -17,6 +17,8 @@ Pod::Spec.new do |s|
 
   s.source_files  = 'YiNetwork/**/**/*.{h,m,png}'
 
+  s.dependency "AFNetworking", "~> 2.6.1"
+  s.dependency "JSONModel", "~> 1.1.2"
 
 
 end
