@@ -19,7 +19,7 @@
 		0A52601B1BA9344F00F4140B /* YiUserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A52601A1BA9344F00F4140B /* YiUserInfoModel.m */; };
 		0A52601E1BA9346400F4140B /* YiGetUserInfoRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A52601D1BA9346400F4140B /* YiGetUserInfoRequest.m */; };
 		0A8021321BA819FC007899C2 /* YiNetworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8021311BA819FC007899C2 /* YiNetworkTests.m */; };
-		0A98CFE11BDF36E00020777B /* YiModifyUserInfoRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A98CFE01BDF36E00020777B /* YiModifyUserInfoRequest.m */; settings = {ASSET_TAGS = (); }; };
+		0A98CFF81BDF791F0020777B /* YiModifyUserInfoRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A98CFF71BDF791F0020777B /* YiModifyUserInfoRequest.m */; settings = {ASSET_TAGS = (); }; };
 		EC5D77576D72842B6A4BDB38 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F430B3F16E70F8A69B53A21 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -57,8 +57,8 @@
 		0A80212B1BA819FC007899C2 /* YiNetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YiNetworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A8021301BA819FC007899C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A8021311BA819FC007899C2 /* YiNetworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YiNetworkTests.m; sourceTree = "<group>"; };
-		0A98CFDF1BDF36E00020777B /* YiModifyUserInfoRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YiModifyUserInfoRequest.h; sourceTree = "<group>"; };
-		0A98CFE01BDF36E00020777B /* YiModifyUserInfoRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YiModifyUserInfoRequest.m; sourceTree = "<group>"; };
+		0A98CFF61BDF791F0020777B /* YiModifyUserInfoRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YiModifyUserInfoRequest.h; path = YiNetworkDemo/YiModifyUserInfoRequest.h; sourceTree = SOURCE_ROOT; };
+		0A98CFF71BDF791F0020777B /* YiModifyUserInfoRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YiModifyUserInfoRequest.m; path = YiNetworkDemo/YiModifyUserInfoRequest.m; sourceTree = SOURCE_ROOT; };
 		84AF307081A611912B12D46C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8F430B3F16E70F8A69B53A21 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6BCC51F981B0F02EA045BE6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -129,8 +129,8 @@
 				0A5260031BA9320C00F4140B /* YiUploadImageRequest.m */,
 				0A52601C1BA9346400F4140B /* YiGetUserInfoRequest.h */,
 				0A52601D1BA9346400F4140B /* YiGetUserInfoRequest.m */,
-				0A98CFDF1BDF36E00020777B /* YiModifyUserInfoRequest.h */,
-				0A98CFE01BDF36E00020777B /* YiModifyUserInfoRequest.m */,
+				0A98CFF61BDF791F0020777B /* YiModifyUserInfoRequest.h */,
+				0A98CFF71BDF791F0020777B /* YiModifyUserInfoRequest.m */,
 				0A5260191BA9344F00F4140B /* YiUserInfoModel.h */,
 				0A52601A1BA9344F00F4140B /* YiUserInfoModel.m */,
 				0A8021151BA819FB007899C2 /* Supporting Files */,
@@ -337,7 +337,7 @@
 				0A5260061BA9320C00F4140B /* YiUploadImageRequest.m in Sources */,
 				0A5260041BA9320C00F4140B /* AppDelegate.m in Sources */,
 				0A52601B1BA9344F00F4140B /* YiUserInfoModel.m in Sources */,
-				0A98CFE11BDF36E00020777B /* YiModifyUserInfoRequest.m in Sources */,
+				0A98CFF81BDF791F0020777B /* YiModifyUserInfoRequest.m in Sources */,
 				0A5260151BA9326900F4140B /* YiBaseRequest.m in Sources */,
 				0A5260141BA9326900F4140B /* YiBaseModel.m in Sources */,
 				0A525FFD1BA931F500F4140B /* main.m in Sources */,
