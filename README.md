@@ -196,7 +196,7 @@ pathName表示请求的具体URL路径；rootUrl表示请求的URL
             
         }];
 </pre>
-子类话YiBaseRequest为YiUploadImageRequest
+子类化YiBaseRequest为YiUploadImageRequest
 <pre>
 @implementation YiUploadImageRequest{
     UIImage *_image;
