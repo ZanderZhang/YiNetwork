@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "YiNetwork"
-  s.version      = "0.9.0"
+  s.version      = "0.9.2"
   s.summary      = "YiNetwork is a high level request util based on AFNetworking."
 
 
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 
   s.author             = { "coderyi" => "coderyi@163.com" }
 
-  s.source       = { :git => "https://github.com/coderyi/YiNetwork.git", :commit => "df485f27599225bce7e55c9021ffb67cad3d7399" }
+  s.source       = { :git => "https://github.com/coderyi/YiNetwork.git", :commit => "2cc7fd08a7589fd2c7b43311e44284e0c1895912" }
 
   s.platform     = :ios, '7.0'
   s.source_files  = 'YiNetwork/**/**/*.{h,m,png}'

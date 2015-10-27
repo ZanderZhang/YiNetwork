@@ -17,7 +17,7 @@ YiNetwork目前依赖JSONModel version1.1.2和AFNetworking version2.6.1，是一
 
 ```ruby
 platform :ios, '7.0'
-pod "YiNetwork", "~> 0.9.1"
+pod "YiNetwork", "~> 0.9.2"
 ```
 
 ####YiBaseModel

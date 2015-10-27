@@ -91,7 +91,7 @@ static NSInteger globalRequestSeqID = 1;
 - (void)request{
     if (self.requestMethod==YiHTTPRequestMethodGet) {
         self.task=[self.manager GET:[self buildRequestUrl] parameters:self.getParams success:^(NSURLSessionDataTask *task, id responseObject){
-            NSLog(@"JSON: %@", responseObject);
+//            NSLog(@"JSON: %@", responseObject);
             YiBaseModel *baseModel=[self responseModelWithData:responseObject];
             if(self.requestSuccess)
             {
@@ -99,7 +99,7 @@ static NSInteger globalRequestSeqID = 1;
             }
 
         } failure:^(NSURLSessionDataTask *task, NSError *error){
-            NSLog(@"Error: %@", error);
+//            NSLog(@"Error: %@", error);
             if (self.requestFailed)
             {
                 
@@ -116,7 +116,7 @@ static NSInteger globalRequestSeqID = 1;
         
             self.task =
             [self.manager POST:[self buildRequestUrl] parameters:self.postParams success:^(NSURLSessionDataTask *task, id responseObject) {
-                NSLog(@"JSON: %@", responseObject);
+//                NSLog(@"JSON: %@", responseObject);
                 YiBaseModel *baseModel=[self responseModelWithData:responseObject];
 
                 if(self.requestSuccess)
@@ -124,7 +124,7 @@ static NSInteger globalRequestSeqID = 1;
                     _requestSuccess(baseModel,task);
                 }
             } failure:^(NSURLSessionDataTask *task, NSError *error) {
-                NSLog(@"Error: %@", error);
+//                NSLog(@"Error: %@", error);
                 if (self.requestFailed)
                 {
                     
@@ -135,14 +135,14 @@ static NSInteger globalRequestSeqID = 1;
         }else{
             self.task =
             [self.manager POST:[self buildRequestUrl] parameters:self.postParams constructingBodyWithBlock:self.constructingBodyBlock success:^(NSURLSessionDataTask *task, id responseObject) {
-                NSLog(@"Success: %@", responseObject);
+//                NSLog(@"Success: %@", responseObject);
                 YiBaseModel *baseModel = [self responseModelWithData:responseObject];
                 if(self.requestSuccess)
                 {
                     _requestSuccess(baseModel,nil);
                 }
             } failure:^(NSURLSessionDataTask *task, NSError *error) {
-                NSLog(@"Error: %@", error);
+//                NSLog(@"Error: %@", error);
                 if (self.requestFailed)
                 {
                     
