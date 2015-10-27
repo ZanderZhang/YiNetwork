@@ -37,7 +37,7 @@ retryCount表示请求出错时重试的次数，默认为0；retryIndex表示�
 - (void)requestWithSuccess:(void(^)(YiBaseModel *model,NSURLSessionTask *task))success
                    failure:(void(^)(NSError *error,NSURLSessionTask *task))failure;
 </pre>
-数据请求的方法，只要在上层，调用该方法就可以活着请求成功或者失败的反馈，以得到YiBaseModel的数据。
+数据请求的方法，只要在上层调用该方法就可以获得请求成功或者失败的反馈，以得到YiBaseModel的数据。
 
 <pre>
 - (YiHTTPRequestMethod)requestMethod;
