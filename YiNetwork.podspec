@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 
   s.author             = { "coderyi" => "coderyi@163.com" }
 
-  s.source       = { :git => "https://github.com/coderyi/YiNetwork.git", :commit => "2cc7fd08a7589fd2c7b43311e44284e0c1895912" }
+  s.source       = { :git => "https://github.com/coderyi/YiNetwork.git", :commit => "c99f69b0483bca67dc91354056aed9cfa2600d32" }
 
   s.platform     = :ios, '7.0'
   s.source_files  = 'YiNetwork/**/**/*.{h,m,png}'
