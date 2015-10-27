@@ -19,22 +19,18 @@ YiBaseRequest必须子类化
 #####属性
 <pre>
 @property (nonatomic, strong) NSMutableDictionary *getParams;
-</pre>
-可以在子类自定义的init方法里面，加入需要的GET参数
-<pre>
 @property (nonatomic, strong) NSMutableDictionary *postParams;
 </pre>
-可以在子类自定义的init方法里面，加入需要的POST参数
+可以在子类自定义的init方法里面，加入需要的GET参数或者POST参数
+
 
 <pre>
 @property (nonatomic, assign) NSInteger retryCount;
-
-</pre>
-请求出错时重试的次数，默认为0
-<pre>
 @property (nonatomic, assign) NSInteger retryIndex;
 </pre>
-正在重试第几次
+retryCount表示请求出错时重试的次数，默认为0；retryIndex表示正在重试第几次
+
+
 
 #####方法
 <pre>
@@ -58,13 +54,11 @@ YiBaseRequest必须子类化
 
 <pre>
 - (NSString *)pathName;
-</pre>
-请求的具体URL路径
-<pre>
 - (NSString *)rootUrl;
-
 </pre>
-请求的URL
+pathName表示请求的具体URL路径；rootUrl表示请求的URL
+
+
 <pre>
 - (AFConstructingBlock)constructingBodyBlock;
 
