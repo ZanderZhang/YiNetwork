@@ -14,9 +14,9 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/coderyi/YiNetwork.git", :tag => "0.9" }
 
-
+  s.platform     = :ios, '7.0'
   s.source_files  = 'YiNetwork/**/**/*.{h,m,png}'
-
+  s.requires_arc  = true
   s.dependency "AFNetworking", "~> 2.6.1"
   s.dependency "JSONModel", "~> 1.1.2"
 
