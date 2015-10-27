@@ -1,4 +1,7 @@
 # YiNetwork
+[![Pod Version](http://img.shields.io/cocoapods/v/YiNetwork.svg?style=flat)](http://cocoadocs.org/docsets/YiNetwork/)
+[![Pod Platform](http://img.shields.io/cocoapods/p/YiNetwork.svg?style=flat)](http://cocoadocs.org/docsets/YiNetwork/)
+[![Pod License](http://img.shields.io/cocoapods/l/YiNetwork.svg?style=flat)](https://opensource.org/licenses/MIT)
 
 YiNetwork是一个的HTTP请求封装库，基于AFNetworking的AFHTTPSessionManager。
 
@@ -8,9 +11,14 @@ YiNetwork主要是一个基类库，主要是两个类YiBaseRequest和YiBaseMode
 
 另外，由于Apple在网络请求方面由NSURLConnection（iOS 2-9）转向NSURLSession（iOS7以上）,随之AFNetworking 3.0也就废弃了NSURLConnection相关的AFURLConnectionOperation，AFHTTPRequestOperation，AFHTTPRequestOperationManager三个类，并且建议使用AFHTTPSessionManager，所以YiBaseRequest也是基于AFHTTPSessionManager的封装。
 
-YiNetwork依赖JSONModel和AFNetworking，是一套值得选择的App请求方案。
+YiNetwork目前依赖JSONModel version1.1.2和AFNetworking version2.6.1，是一套值得选择的App请求方案。
 
+#### Podfile
 
+```ruby
+platform :ios, '7.0'
+pod "YiNetwork", "~> 0.9.0"
+```
 
 ####YiBaseModel
 YiBaseModel继承自第三方库JSONModel，当然你也可以不用使用它，自己解析JSON数据或者其它格式的数据
