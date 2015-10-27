@@ -12,11 +12,11 @@ YiNetwork依赖JSONModel和AFNetworking，是一套值得选择的App请求方�
 
 
 
-######YiBaseModel
+####YiBaseModel
 YiBaseModel继承自第三方库JSONModel，当然你也可以不用使用它，自己解析JSON数据或者其它格式的数据
-#####YiBaseRequest
+####YiBaseRequest
 YiBaseRequest必须子类化
-######属性
+#####属性
 <pre>
 @property (nonatomic, strong) NSMutableDictionary *getParams;
 </pre>
@@ -36,7 +36,7 @@ YiBaseRequest必须子类化
 </pre>
 正在重试第几次
 
-######方法
+#####方法
 <pre>
 - (void)requestWithSuccess:(void(^)(YiBaseModel *model,NSURLSessionTask *task))success
                    failure:(void(^)(NSError *error,NSURLSessionTask *task))failure;
@@ -76,7 +76,7 @@ YiBaseRequest必须子类化
 </pre>
 取消当前的NSURLSessionTask对象，也就是取消这次请求
 
-######发送一个GET请求
+#####发送一个GET请求
 只要分别子类化YiBaseRequest和YiBaseModel，在上层使用就非常简单
 
 <pre>
@@ -137,7 +137,7 @@ YiBaseRequest必须子类化
 
 
 
-######发送一个POST请求
+#####发送一个POST请求
 <pre>
 //通过POST请求修改用户信息
     YiModifyUserInfoRequest *modifyUserInfoRequest=[[YiModifyUserInfoRequest alloc] initWithNameId:@"coderyi"];
@@ -182,7 +182,7 @@ YiBaseRequest必须子类化
 
 
 
-######上传图片
+#####上传图片
 <pre>
  //上传一张图片
         UIImage *image;
