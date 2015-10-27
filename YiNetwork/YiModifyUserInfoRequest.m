@@ -7,7 +7,7 @@
 //
 
 #import "YiModifyUserInfoRequest.h"
-#import "YiUserInfoModel.h"
+
 
 @implementation YiModifyUserInfoRequest
 -(instancetype)initWithNameId:(NSString *)nameId {
@@ -27,10 +27,6 @@
 {
     return YiHTTPRequestMethodPost;
 }
-- (YiBaseModel *)responseModelWithData:(id)data
-{
-    
-    return [[YiUserInfoModel alloc] initWithDictionary:data error:nil];
-}
+
 
 @end
